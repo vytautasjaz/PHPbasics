@@ -1,11 +1,13 @@
 <html>
     <head>
-        <title><?php print 'Aš, ' . date('l') . ' ir PHP'; ?></title>
+        <title>PHP lydės ir <?php print date('Y-m-d', strtotime('+1 day')) . '!'; ?></title>
     </head>
     <body>
-        <h1><b>Vytautas</b> - HTML <?php print 'ir PHP'; ?> asas jau nuo <?php print date('o') . ' metų'; ?></h1> 
+        <h1>
+            <b>Vytautas</b> - PHP su manim buvo ir <?php print date('H', strtotime('-1 hour')) . ' valandą'; ?>
+        </h1> 
         <p> 
-            Viskas prasidėjo <?php print date('F') . ' mėnesio ' . date('j') . ' dieną!'; ?>
+            <?php print date('Y', strtotime('+1 year')); ?> ne už kalnų!
         </p>       
     </body>
 </html>
