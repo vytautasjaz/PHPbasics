@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Komentarai/title>
+        <title>Komentarai</title>
     </head>
     <body>
         <h1>Dainų tekstai</h1>
