@@ -28,6 +28,6 @@
     </head>
     <body>
         <div class="bomba-<?php print date('s'); ?>"></div>
-        <div class="sekundes"><?php print date('s') ?></div>
+        <div class="sekundes"><?php print date('s'); ?></div>
     </body>
 </html>
