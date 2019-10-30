@@ -1,9 +1,9 @@
 <html>
     <head>
-        <title>PHP lydės ir <?php print date('Y-m-d', strtotime('+' . rand(0, 10) . 'years')); ?></title>
+        <title>PHP lydės ir <?php print date('Y-m-d', strtotime('+' . rand(0, 10) . 'years')); ?> !</title>
     </head>
-    <body>
-        <h1><b>Vytautas</b> - Galbūt turėsiu <?php print rand(1, 5) . ' vaikų(us)!' ?></h1>
-        <p>D. Trump'as nebus prezidentu: <?php print date('Y ', strtotime('+' . rand(2, 10) . 'years')) . date('m d'); ?></h1>
-</body>
+    <body style="background-color:rgb(<?php print rand(0, 255) . ', ' . rand(0, 255) . ', ' . rand(0, 255); ?>);">
+        <h1 style="font-size:<?php print rand(10, 30) ?> "> Aš keičiu savo dydį!</h1>
+        <p style="color:rgb(<?php print rand(0, 255) . ', ' . rand(0, 255) . ', ' . rand(0, 255); ?>);"> Aš keičiu savo spalvą!</p>
+    </body>
 </html>
