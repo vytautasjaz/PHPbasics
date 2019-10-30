@@ -1,28 +1,27 @@
 <html>
     <head>
-        <title>CSS ir PHP</title>
+        <title>Bomba</title>
         <style>
-            .dice1 {
-                background-image: url("http://dobbelsteen.virtuworld.net/img/1c.gif");
+            body {
+                display:flex;
+                flex-direction:column;
+                align-items:center;
             }
-            .dice2 {
-                background-image: url("http://dobbelsteen.virtuworld.net/img/2c.gif");
+            .bomba {
+                height: <?php print date('s'); ?>px;
+                width: <?php print date('s'); ?>px;
+                background-image: url("https://mpng.pngfly.com/20180802/esc/kisspng-vector-graphics-explosion-clip-art-bomb-image-5b63381813fbc0.4716718515332290800819.jpg");
+                background-size:cover;
             }
-            .dice3 {
-                background-image: url("http://dobbelsteen.virtuworld.net/img/3c.gif");
-            }
-            .dice4 {
-                background-image: url("http://dobbelsteen.virtuworld.net/img/4c.gif");
-            }
-            .dice5 {
-                background-image: url("http://dobbelsteen.virtuworld.net/img/5c.gif");
-            }
-            .dice6 {
-                background-image: url("http://dobbelsteen.virtuworld.net/img/6c.gif");
-            }
+
+            .sekundes {
+                text-align: center;
+            }   
         </style>
     </head>
+
     <body>
-        <div class="dice<?php print rand(1, 6); ?>"  style="width: 250px; height: 250px;">
+        <div class="bomba"></div>
+        <div class="sekundes"><?php print date('s') ?> </div>
     </body>
 </html>
