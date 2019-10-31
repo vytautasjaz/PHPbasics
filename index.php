@@ -1,15 +1,21 @@
 <?php
-$img = 'src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/b5133b75394159.5d83874382b87.png"';
+$sudas_1 = (rand(1, 100));
+$sudas_2 = (rand(101, 200));
+$sudas_3 = (rand(201, 300));
+$sudas_4 = (rand(301, 400));
+$sudas_1_txt = "Jei paėmei $sudas_1 jievrų";
+$sudas_2_txt = "Su vienu kabančiu grąžinsi $sudas_2";
+$sudas_3_txt = "Su dviem kabančiais grąžinsi $sudas_3";
 ?>
-<!DOCTYPE html>
+<!DOCTYPE htm>
 <html>
     <head>
-        <title>Paveikslėliai</title>
+        <title>Švarus, bet šūdinas kodas</title>
     </head>
     <body>
-        <img <?php print $img; ?>>
-        <img <?php print $img; ?>>
-        <img <?php print $img; ?>>
-        <img <?php print $img; ?>>
+        <h1>Skolos skaičiuoklė</h1>
+        <h3><?php print $sudas_1_txt; ?></h3>
+        <h3><?php print $sudas_3_txt; ?></h3> 
+        <h3><?php print $sudas_2_txt; ?></h3> 
     </body>
 </html>
