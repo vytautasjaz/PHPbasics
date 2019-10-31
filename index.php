@@ -1,11 +1,12 @@
 <?php
-$sudas_1 = (rand(1, 100));
-$sudas_2 = (rand(101, 200));
-$sudas_3 = (rand(201, 300));
-$sudas_4 = (rand(301, 400));
-$sudas_1_txt = "Jei paėmei $sudas_1 jievrų";
-$sudas_2_txt = "Su vienu kabančiu grąžinsi $sudas_2";
-$sudas_3_txt = "Su dviem kabančiais grąžinsi $sudas_3";
+$skola = (rand(1, 100));
+$graza_su_vienu = (rand(101, 200));
+$graza_su_dviem = (rand(201, 300));
+
+$pavadinimas="Skolos skaičiuoklė";
+$skola_txt = "Jei paėmei $skola jievrų";
+$su_vienu = "Su vienu kabančiu grąžinsi $graza_su_vienu";
+$su_dviem = "Su dviem kabančiais grąžinsi $graza_su_dviem";
 ?>
 <!DOCTYPE htm>
 <html>
@@ -13,9 +14,9 @@ $sudas_3_txt = "Su dviem kabančiais grąžinsi $sudas_3";
         <title>Švarus, bet šūdinas kodas</title>
     </head>
     <body>
-        <h1>Skolos skaičiuoklė</h1>
-        <h3><?php print $sudas_1_txt; ?></h3>
-        <h3><?php print $sudas_3_txt; ?></h3> 
-        <h3><?php print $sudas_2_txt; ?></h3> 
+        <h1><?php print $pavadinimas; ?></h1>
+        <h3><?php print $skola_txt; ?></h3>
+        <h3><?php print $su_vienu; ?></h3> 
+        <h3><?php print $su_dviem; ?></h3> 
     </body>
 </html>
