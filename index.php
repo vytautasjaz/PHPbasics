@@ -1,22 +1,19 @@
 <?php
-$skola = (rand(1, 100));
-$graza_su_vienu = (rand(101, 200));
-$graza_su_dviem = (rand(201, 300));
-
-$pavadinimas="Skolos skaičiuoklė";
-$skola_txt = "Jei paėmei $skola jievrų";
-$su_vienu = "Su vienu kabančiu grąžinsi $graza_su_vienu";
-$su_dviem = "Su dviem kabančiais grąžinsi $graza_su_dviem";
+$bin_vol = 40;
+$bin_heap_vol = rand(1, 15);
+$trash_per_day = 15;
+$days = ($bin_vol + $bin_heap_vol) / $trash_per_day;
+$days_round = round($days, 0, PHP_ROUND_HALF_DOWN);
 ?>
 <!DOCTYPE htm>
 <html>
     <head>
-        <title>Švarus, bet šūdinas kodas</title>
+        <title>Šiukšlinė</title>
     </head>
     <body>
-        <h1><?php print $pavadinimas; ?></h1>
-        <h3><?php print $skola_txt; ?></h3>
-        <h3><?php print $su_vienu; ?></h3> 
-        <h3><?php print $su_dviem; ?></h3> 
+        <h1>Šiukšlių prognozė</h1>
+        <p>Turima šiukšlinė - <?php print $bin_vol; ?> litrų</p>
+        <p>Žmona nieko nesako, kol kaupas neviršija <?php print $bin_heap_vol; ?> litrų</p>
+        <h3>Išvada: Nieko nedarysiu <?php print $days_round; ?> dienų</h3>
     </body>
 </html>
