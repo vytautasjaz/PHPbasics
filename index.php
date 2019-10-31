@@ -1,5 +1,5 @@
 <?php
-$distance = rand(1, 500);
+$distance = rand(1, 5000);
 $consumption = 7.5;
 $price_1 = 1.3;
 $my_money = 100;
