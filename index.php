@@ -1,6 +1,6 @@
 <?php
 $string = 'Ačiū už dėmesį';
-$int = 1;
+$int = 45646;
 $bool = true;
 $null = null;
 ?>
