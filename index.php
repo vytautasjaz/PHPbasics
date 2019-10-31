@@ -14,6 +14,6 @@ $days_round = round($days, 0, PHP_ROUND_HALF_DOWN);
         <h1>Šiukšlių prognozė</h1>
         <p>Turima šiukšlinė - <?php print $bin_vol; ?> litrų</p>
         <p>Žmona nieko nesako, kol kaupas neviršija <?php print $bin_heap_vol; ?> litrų</p>
-        <h3>Išvada: Nieko nedarysiu <?php print $days_round; ?> dienų</h3>
+        <h3>Išvada: Nieko nedarysiu <?php print $days_round; ?> dienas</h3>
     </body>
 </html>
