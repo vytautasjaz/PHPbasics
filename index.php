@@ -1,28 +1,43 @@
 <?php
-$sunny = (bool) rand(0, 1);
+$bool = true;
+$int = 1;
+$str = '1';
+$str_1 = "1.23";
+$flt = 1.23;
 
-if ($sunny) {
-    $img = 'https://icons-for-free.com/iconfiles/png/512/sunny+temperature+weather+icon-1320196637430890623.png';
-    $p1 = 'Saulėta';
-} else {
-    $img = 'https://icons-for-free.com/iconfiles/png/512/cloudy+fog+foggy+weather+icon-1320196634478143974.png';
-    $p1 = 'Debesuota';
+
+if ($bool === $int) {
+    $atsakymas_1 = 'Identiški';
+} elseif ($bool == $int) {
+    $atsakymas_1 = 'Lygūs';
 }
+
+if ($str === $bool) {
+    $atsakymas_2 = 'Identiški';
+} elseif ($str == $bool) {
+    $atsakymas_2 = 'Lygūs';
+}
+
+if ($flt === $str_1) {
+    $atsakymas_3 = 'Identiški';
+} elseif ($flt == $str_1) {
+    $atsakymas_3 = 'Lygūs';
+}
+
+$li_1 = "Bool (true) ir integer (1): $atsakymas_1";
+$li_2 = "String (1) ir Boolean (1): $atsakymas_2";
+$li_3 = "Float (1.23) ir String (1.23): $atsakymas_3";
 ?>
-<!DOCTYPE htm>
 <html>
     <head>
-        <style>
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        </style>
-        <title>Orų prognozė</title>
+        <title> Lygūs ar Identiški</title>
     </head>
     <body>
-        <img src="<?php print $img; ?>"</img>
-        <p><?php print $p1; ?>
+        <ul>
+            <li><?php print $li_1; ?></li>
+            <li><?php print $li_2; ?></li>
+            <li><?php print $li_3; ?></li>
+
+        </ul>
     </body>
 </html>
