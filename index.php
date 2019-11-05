@@ -52,8 +52,5 @@ $h3 = "Viso traukdamas pradstovėsiu $time_total valandų";
             }
             ?>
         </div>
-
     </body>
-
-
 </html>
