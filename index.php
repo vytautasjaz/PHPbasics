@@ -5,7 +5,8 @@ $katasunis = 0;
 
 for ($x = 0; $x < $kates; $x++) {
     for ($y = 0; $y < $sunys; $y++) {
-        if ($pavyko = rand(0,1)) {
+        $pavyko = rand(0,1);
+        if ($pavyko) {
             $katasunis++;
             break;
         }
@@ -15,6 +16,7 @@ for ($x = 0; $x < $kates; $x++) {
 $h1 = "Katašunių išeiga";
 $h2 = "Dalyvavo $kates katės ir $sunys šunys";
 $h3 = "Katašunių išeiga: $katasunis";
+
 ?>
 <html>
     <head>
