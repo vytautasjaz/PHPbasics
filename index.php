@@ -2,7 +2,6 @@
 $months = 12;
 $wallet = 1000;
 $month_income = 700;
-$month_expenses = rand(0, 700);
 $wallet = 0;
 
 for ($x = 0; $x < $months; $x++) {
