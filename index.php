@@ -27,9 +27,33 @@ $h2 = "Per $days dienas, surukysiu $count_ttl cigareciu uz $price_ttl eur.";
 $h3 = "Viso traukdamas pradstovėsiu $time_total valandų";
 ?>
 <html>
+    <head>
+        <style>
+            .cigareciu_blokas {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .cigarete {
+                width: 150px;
+                height: 150px;
+                background: url('https://png.pngtree.com/element_our/png/20181129/cigarette-smoke-png_251566.jpg');
+                background-size: cover;
+            }
+        </style>
+    </head>
     <body>
         <h1><?php print $h1; ?></h1>
         <h2><?php print $h2; ?></h2>
         <h3><?php print $h3; ?></h3>
+        <div class="cigareciu_blokas">
+            <?php
+            for ($i = 0; $i < $count_ttl; $i++) {
+                print '<div class="cigarete"></div>';
+            }
+            ?>
+        </div>
+
     </body>
+
+
 </html>
