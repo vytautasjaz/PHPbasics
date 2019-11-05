@@ -1,4 +1,5 @@
 <?php
+
 $kates = rand(1, 3);
 $sunys = rand(1, 3);
 $katasunis = 0;
@@ -23,8 +24,8 @@ $h3 = "Katašunių išeiga: $katasunis";
         <title>Ciklai</title>
     </head>
     <body>
-        <h1><?php print $h1 ?></h1>
-        <h2><?php print $h2 ?></h2>
-        <h3><?php print $h3 ?></h3>
+        <h1><?php print $h1; ?></h1>
+        <h2><?php print $h2; ?></h2>
+        <h3><?php print $h3; ?></h3>
     </body>
 </html>
