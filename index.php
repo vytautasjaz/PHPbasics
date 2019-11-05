@@ -20,7 +20,7 @@ for ($d = 0; $d < $days; $d++) {
 }
 
 $price_ttl = ceil($count_ttl / 20) * $pack_price;
-$time_total= round(($count_ttl*$time_per_cig/60), 2,PHP_ROUND_HALF_DOWN);
+$time_total= round(($count_ttl*$time_per_cig/60), 2);
 
 $h1 = 'Mano dumu skaiciuokle';
 $h2 = "Per $days dienas, surukysiu $count_ttl cigareciu uz $price_ttl eur.";
