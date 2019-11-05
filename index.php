@@ -1,12 +1,11 @@
 <?php
 $kates = rand(1, 3);
 $sunys = rand(1, 3);
-$pavyko = rand(0, 1);
 $katasunis = 0;
 
 for ($x = 0; $x < $kates; $x++) {
     for ($y = 0; $y < $sunys; $y++) {
-        if ($pavyko) {
+        if ($pavyko = rand(0,1)) {
             $katasunis++;
             break;
         }
