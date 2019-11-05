@@ -2,43 +2,34 @@
 $days = 365;
 $pack_price = 3.50;
 $count_ttl = 0;
+$time_per_cig=5;
 
-$weeks = round($days / 7, 0, PHP_ROUND_HALF_DOWN);
-$like_dienos = $days % 7;
+for ($d = 0; $d < $days; $d++) {
+    $weekday = date('N', strtotime("+$d day"));
 
-for ($i = 1; $i <= $weeks; $i++) {
-    for ($x = 1; $x <= 7; $x++) {
-        if ($x <= 5) {
-            $count_ttl += rand(3, 4);
-        } elseif ($x == 6) {
-            $count_ttl += rand(10, 20);
-        } elseif ($x == 7) {
-            $count_ttl += rand(1, 3);
-        }
+    if ($weekday == 6) {
+        $cigs_sat = rand(10, 20);
+        $count_ttl += $cigs_sat;
+    } elseif ($weekday == 7) {
+        $cigs_sun = rand(1, 3);
+        $count_ttl += $cigs_sun;
+    } else {
+        $cigs_mon_fri = rand(3, 4);
+        $count_ttl += $cigs_mon_fri;
     }
 }
 
-$savaites_diena = date('N');
-if ($savaites_diena <= 5) {
-    $count_ttl += rand(3, 4);
-} elseif ($savaites_diena == 6) {
-    $count_ttl += rand(10, 20);
-} elseif ($savaites_diena == 7) {
-    $count_ttl += rand(1, 3);
-}
+$price_ttl = ceil($count_ttl / 20) * $pack_price;
+$time_total= round(($count_ttl*$time_per_cig/60), 2,PHP_ROUND_HALF_DOWN);
 
-$pack_count = round($count_ttl / 20, 0, PHP_ROUND_HALF_UP);
-$price_ttl = $pack_count * $pack_price;
-
-$h1 = 'Mano dūmų skaičiuoklė';
-$h2 = "Per $days dienas, surūkysiu $count_ttl cigarečių už $price_ttl eur.";
+$h1 = 'Mano dumu skaiciuokle';
+$h2 = "Per $days dienas, surukysiu $count_ttl cigareciu uz $price_ttl eur.";
+$h3 = "Viso traukdamas pradstovėsiu $time_total valandų";
 ?>
 <html>
-    <head>
-        <title>Ciklai</title>
-    </head>
     <body>
         <h1><?php print $h1; ?></h1>
         <h2><?php print $h2; ?></h2>
+        <h3><?php print $h3; ?></h3>
     </body>
 </html>
