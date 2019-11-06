@@ -5,7 +5,6 @@ $db = $max_db;
 $db_decr = 6; // dB
 $p_1 = '';
 $my_position = rand(1, 100);
-$riba = 0;
 
 for ($dist = 1; $db > 0; $dist *= 2) {
     $sec = round($dist / $speed_of_sound);
