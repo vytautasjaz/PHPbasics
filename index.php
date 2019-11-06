@@ -1,37 +1,26 @@
 <?php
-$speed_of_sound = 333; // m/s
-$max_db = 120; // dB
-$db = $max_db;
-$db_decr = 6; // dB
-$p_1 = '';
-$my_position = rand(1, 100);
+$months = 24;
+$car_price_new = 3000;
+$car_price_used = $car_price_new;
+$depreciation = 2;
 
-for ($dist = 1; $db > 0; $dist *= 2) {
-    $sec = round($dist / $speed_of_sound);
-    $db -= $db_decr;
-    $p_1 .= "Po $sec sec. ($dist m): $db db <br>";
-
-    if ($db >= 90) {
-        $riba = $dist;
-    }
+for ($i = 1; $i <= $months; $i++) {
+    $nuvertejimas = $car_price_new * $depreciation / 100;
+    $car_price_used -= $nuvertejimas;
 }
 
-if ($my_position < $riba) {
-    $keisiu = 'keisiu';
-    $img = 'https://images.newschoolers.com/images/17/00/66/17/21/661721_400w_1000h.jpeg';
-} else {
-    $keisiu = 'nekeisiu';
-    $img = 'https://sayingimages.com/wp-content/uploads/take-it-easy-nigga-meme.jpg';
-}
+$depr_perc = round(100 - ($car_price_used / $car_price_new * 100));
 
-$h1 = 'Griaustinio zona';
-$p_2 = "Stovėdamas $my_position m. nuo griasutinio, $keisiu klenes(-ių)."
+$h1 = 'Kiek nuvertės mašina?';
+$h2 = "Naujos mašinos kaina: $car_price_new";
+$h3 = "Po $months mėn., mašinos vertė bus: $car_price_used eur.";
+$h4 = "Mašina nuvertės $depr_perc proc."
 ?>
 <html>
     <body>
         <h1><?php print $h1; ?></h1>
-        <p><?php print $p_1; ?></p>
-        <p><?php print $p_2; ?></p>
-        <img src="<?php print $img; ?>">
+        <h2><?php print $h2; ?></h2>
+        <h3><?php print $h3; ?></h3>
+        <h4><?php print $h4; ?></h4>
     </body>
 </html> 
