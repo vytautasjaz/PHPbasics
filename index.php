@@ -2,7 +2,7 @@
 
 //pirma eile - 1 keglis
 
-$kegliai = [
+$takeliai = [
     ['svarus' => 1,
         'kegliai' => [
             'eile' => [
@@ -25,4 +25,4 @@ $kegliai = [
     ],
 ];
 
-var_dump($kegliai);
+var_dump($takeliai);
