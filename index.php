@@ -1,4 +1,5 @@
 <?php
-$array = ['kiausinis','baklazanas','obuolys'];
-var_dump($array) ;
+
+$array = ['Kiausinis', 'Baklazanas', 'Obuolys'];
+var_dump($array);
 ?>
