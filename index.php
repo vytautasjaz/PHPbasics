@@ -1,40 +1,28 @@
 <?php
 
-$array = [
-    ['viršutinė lentyna' =>
-        ['produktas' => 'Kiaušiniai',
-            'kiekis' => 3,
-        ],
-        [
-            'produktas' => 'Grietinė',
-            'kiekis' => 1,
-        ],
-        [
-            'produktas' => 'Jogurtas',
-            'kiekis' => 2,
-        ],
-        [
-            'produktas' => 'Žuvis',
-            'kiekis' => 0,
+//pirma eile - 1 keglis
+
+$kegliai = [
+    ['svarus' => 1,
+        'kegliai' => [
+            'eile' => [
+                ['pirma' => [0]],
+                ['antra' => [0, 1]],
+                ['trecia' => [0, 0, 1]],
+                ['ketvirta' => [1, 0, 0, 1]]
+            ],
         ],
     ],
-    ['apatinė lentyna' =>
-        ['produktas' => 'Pienas',
-            'kiekis' => 1,
-        ],
-        [
-            'produktas' => 'Kefyras',
-            'kiekis' => 0,
-        ],
-        [
-            'produktas' => 'Degtinė',
-            'kiekis' => 2,
-        ],
-        [
-            'produktas' => 'Kečupas',
-            'kiekis' => 2,
+    ['svarus' => 0,
+        'kegliai' => [
+            'eile' => [
+                ['pirma' => [0]],
+                ['antra' => [0, 0]],
+                ['trecia' => [0, 0, 0]],
+                ['ketvirta' => [0, 0, 0, 0]]
+            ],
         ],
     ],
 ];
 
-var_dump($array);
+var_dump($kegliai);
