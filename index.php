@@ -1,5 +1,9 @@
 <?php
 
-$array = ['Kiausinis', 'Baklazanas', 'Obuolys'];
+$array = [
+    'kiekis' => ['vienas', 'du'],
+    'dydis' => ['didelis', 'mazas', 'dideli'],
+    'pavadinimas' => ['kiaušiniai', 'baklažanas', 'grietinės indelis']
+];
+
 var_dump($array);
-?>
