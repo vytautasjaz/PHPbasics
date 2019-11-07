@@ -1,24 +1,5 @@
 <?php
-$sunny = (bool) rand(0, 1);
-$rainy = (bool) rand(0, 1);
 
-if ($sunny) {
-    if ($sunny && $rainy) {
-        $oras = 'saule_su_lietum';
-        $oras_text = 'Saulėta su lietum';
-    } elseif ($sunny && !$rainy) {
-        $oras = 'saule_be_lietaus';
-        $oras_text = 'Saulėta be lietaus';
-    }
-} elseif (!$sunny) {
-    if (!$sunny && $rainy) {
-        $oras = 'debesuota_su_lietum';
-        $oras_text = 'Debesuota su lietum';
-    } elseif (!$sunny && !$rainy) {
-        $oras = 'debesuota_be_lietaus';
-        $oras_text = 'Debesuota be lietaus';
-    }
-}
 ?>
 <html>
     <head>
