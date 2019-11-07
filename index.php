@@ -3,7 +3,8 @@
 //pirma eile - 1 keglis
 
 $takeliai = [
-    ['svarus' => 1,
+    [
+        'svarus' => 1,
         'kegliai' => [
             'eile' => [
                 [0],
@@ -13,7 +14,8 @@ $takeliai = [
             ],
         ],
     ],
-    ['svarus' => 0,
+    [
+        'svarus' => 0,
         'kegliai' => [
             'eile' => [
                 [0],
