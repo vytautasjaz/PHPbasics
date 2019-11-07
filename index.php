@@ -6,24 +6,30 @@ $array = [
         'nickas' => 'Pizdys',
         'ginklas' =>
         [
-            'pavadinimas' => 'telefonas',
-            'statusas' => 'prapi*tas'
-        ]
+            [
+                'pavadinimas' => 'telefonas',
+                'statusas' => 'prapi*tas'
+            ]
+        ],
     ],
     [
         'vardas' => 'Tomas',
         'nickas' => 'Ablomas',
         'ginklai' => [
-            'pavadinimas' => 'buljonas',
-            'statusas' => 'naudojamas'
+            [
+                'pavadinimas' => 'buljonas',
+                'statusas' => 'naudojamas'
+            ]
         ],
     ],
     [
         'vardas' => 'Ana',
         'nickas' => 'Shitkova',
         'ginklai' => [
-            'pavadinimas' => 'rulonas',
-            'statusas' => 'pasibaiges'
+            [
+                'pavadinimas' => 'rulonas',
+                'statusas' => 'pasibaiges'
+            ]
         ],
     ],
 ];
