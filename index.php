@@ -1,4 +1,5 @@
 <?php
+
 $car_price_new = 3000;
 $car_price_used = $car_price_new;
 $depreciation = 2;
@@ -17,7 +18,7 @@ $depr_perc = round(100 - ($car_price_used / $car_price_new * 100));
 $kupiuros = $car_price_used;
 $kupiuros_print = '';
 
-for (; $kupiuros > 0.01;) {
+for (; $kupiuros > 0; $kupiuros = round($kupiuros, 2)) {
     if ($kupiuros >= 500) {
         $kupiuros_print .= '<div class ="eur_500"></div>';
         $kupiuros -= 500;
@@ -70,6 +71,7 @@ $h1 = 'Kiek nuvertės mašina?';
 $h2 = "Naujos mašinos kaina: $car_price_new";
 $h3 = "Mašiną galėsi nusipirkti po $i mėn., kai jos vertė bus: $car_price_used";
 $h4 = "Mašina nuvertės $depr_perc proc.";
+
 ?>
 <html>
     <head>
@@ -135,6 +137,5 @@ $h4 = "Mašina nuvertės $depr_perc proc.";
         <h3><?php print $h3; ?></h3>
         <h4><?php print $h4; ?></h4>
         <div><?php print $kupiuros_print; ?></div>
-
     </body>
 </html> 
