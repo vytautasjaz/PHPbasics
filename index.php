@@ -1,26 +1,31 @@
 <?php
 
-//pirma eile - 1 keglis
+//kryptis nusakoma vaziavimo kryptimi pagal laikrodzio rodykle
 
-$takeliai = [
+$posukiai = [
     [
-        'svarus' => 1,
-        'kegliai' => [
-            [0],
-            [0, 1],
-            [0, 0, 1],
-            [1, 0, 0, 1]
-        ],
+        'kryptis' => 'desine',
+        'laipsnis' => 90
     ],
     [
-        'svarus' => 0,
-        'kegliai' => [
-            [0],
-            [0, 0],
-            [0, 0, 0],
-            [0, 0, 0, 0]
-        ],
+        'kryptis' => 'kaire',
+        'laipsnis' => 160
     ],
+    [
+        'kryptis' => 'desine',
+        'laipsnis' => 180
+    ],
+    [
+        'kryptis' => 'kaire',
+        'laipsnis' => 110
+    ],
+    [
+        'kryptis' => 'kaire',
+        'laipsnis' => 180
+    ],
+    ['kryptis' => 'desine',
+        'laipsnis' => 100
+    ]
 ];
 
-var_dump($takeliai);
+var_dump($posukiai);
