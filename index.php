@@ -3,12 +3,12 @@
 $array = [
     [
         'pavadinimas' => 'Kiausiainiai',
-        'kiekis' => 1,
-        'dydis' => 'didelis'
+        'kiekis' => 2,
+        'dydis' => 'dideli'
     ],
     [
         'pavadinimas' => 'Baklažanas',
-        'kiekis' => 2,
+        'kiekis' => 1,
         'dydis' => 'mažas'
     ],
     [
