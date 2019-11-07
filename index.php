@@ -1,19 +1,21 @@
 <?php
 
 $array = [
-    'Kiausiainiai' => [
+    [
+        'pavadinimas' => 'Kiausiainiai',
         'kiekis' => 1,
         'dydis' => 'didelis'
     ],
-    'Baklažanas' => [
-        'kiekis' => 1,
+    [
+        'pavadinimas' => 'Baklažanas',
+        'kiekis' => 2,
         'dydis' => 'mažas'
     ],
-    'Grietinės indelis' => [
+    [
+        'pavadinimas' => 'Grietinės indelis',
         'kiekis' => 1,
         'dydis' => 'didelis'
     ],
 ];
-
 
 var_dump($array);
