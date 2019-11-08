@@ -1,12 +1,57 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap');
 *{
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: Comic Sans MS;
+    margin: 0, auto;
 }
 body {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;   
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header_menu {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    list-style-type: none;
+    font-weight: bold; 
+}
+
+.header_menu a{
+    color: white;
+    text-decoration: none;}
+
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../images/bg.jpg');
-    background-size: cover;   
 }
+.member {
+    margin-top: 50px;
+    height:600px;
+    width:500px;
+}
+.member_1 {
+    background-image: url('../images/member_1.jpg');
+}
+.member_2 {
+    background-image: url('../images/member_2.jpg');
+}
+.member_3 {
+    background-image: url('../images/member_3.jpg');
+}
+.member_4 {
+    background-image: url('../images/member_4.jpg');
+}
+
