@@ -13,6 +13,11 @@
     background-size: cover;   
 }
 
+.contact_bg {
+    background-image: url('../images/bg_contact.jpg');
+    background-size: cover;  
+}
+
 body {
     background-image: url('../images/bg.jpg');
     background-size: cover;   

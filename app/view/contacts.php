@@ -13,7 +13,7 @@ $li_contact_4 = "Emmanuel Wasiu";
         <title>Price Of Nigeria</title>
         <link rel = "stylesheet" href = "../../assets/css/style.css">
     </head>
-    <body>
+    <body class="contact_bg">
         <header>
             <ul class ="header_menu">
                 <li><a href="../../index.php">Home</a></li>
