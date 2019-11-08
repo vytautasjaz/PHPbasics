@@ -2,6 +2,17 @@
     font-family: Comic Sans MS;
     margin: 0, auto;
 }
+
+.about_us_1 {
+    background-image: url('../images/aboutus_background_1.jpg');
+    background-size: cover;   
+}
+
+.about_us_2 {
+    background-image: url('../images/aboutus_background_2.jpg');
+    background-size: cover;   
+}
+
 body {
     background-image: url('../images/bg.jpg');
     background-size: cover;   
@@ -53,5 +64,36 @@ main {
 }
 .member_4 {
     background-image: url('../images/member_4.jpg');
+}
+
+.moneyball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:500;
+    width:400;
+    background-image: url('../images/moneyball.png');  
+}
+
+.moneyball_text {
+    text-align: center;
+    font-size: 40px;
+    background-color: white; 
+}
+
+.highlight {
+     background-color: white; 
+}
+
+.bg_img {
+    display: flex;
+    height: 100vh;
+    background-size: cover;
+}
+.bg_img_contact {
+    background-image: url('https://thequestion.s3.eu-central-1.amazonaws.com/223/225039-f56bc0c7.jpeg(359 kB)
+        https://thequestion.s3.eu-central-1.amazonaws.com/223/225039-f56bc0c7.jpeg
+        ');
+    opacity: 70%;
 }
 
